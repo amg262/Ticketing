@@ -7,7 +7,36 @@ namespace Ticketing
     class Program
     {
 
-        
+
+        public string GetInput()
+        {
+            string[] names = new string[7];
+            
+            Console.Write("Ticket ID");
+            string id = Console.ReadLine();
+            
+            
+            Console.Write("Summary");
+            string summary = Console.ReadLine();
+            
+            Console.Write("Status");
+            string status = Console.ReadLine();
+            
+            Console.Write("Priority");
+            string priority = Console.ReadLine();
+            
+            Console.Write("Submitter");
+            string submitter = Console.ReadLine();
+            
+            Console.Write("Assigned");
+            string assigned = Console.ReadLine();
+            
+            Console.Write("Watching");
+            string watching = Console.ReadLine();
+            
+            
+            return "";
+        }
         
         public void BuildFile() {
 
