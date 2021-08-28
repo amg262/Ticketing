@@ -10,29 +10,35 @@ namespace Ticketing
 
         public string GetInput()
         {
-            string[] names = new string[7];
+            string[] records = new string[7];
             
             Console.Write("Ticket ID");
             string id = Console.ReadLine();
-            
-            
+            records[0] = id;
+
             Console.Write("Summary");
             string summary = Console.ReadLine();
+            records[1] = summary;
             
             Console.Write("Status");
             string status = Console.ReadLine();
+            records[2] = status;
             
             Console.Write("Priority");
             string priority = Console.ReadLine();
-            
+            records[3] = priority;
+
             Console.Write("Submitter");
             string submitter = Console.ReadLine();
+            records[4] = submitter;
             
             Console.Write("Assigned");
             string assigned = Console.ReadLine();
+            records[5] = assigned;
             
             Console.Write("Watching");
             string watching = Console.ReadLine();
+            records[6] = watching; 
             
             
             return "";
