@@ -1,0 +1,16 @@
+C:\Users\Andy\OneDrive\Documents\DotNet\Ticketing\bin\Debug\net5.0\Ticketing.exe
+C:\Users\Andy\OneDrive\Documents\DotNet\Ticketing\bin\Debug\net5.0\Ticketing.deps.json
+C:\Users\Andy\OneDrive\Documents\DotNet\Ticketing\bin\Debug\net5.0\Ticketing.runtimeconfig.json
+C:\Users\Andy\OneDrive\Documents\DotNet\Ticketing\bin\Debug\net5.0\Ticketing.runtimeconfig.dev.json
+C:\Users\Andy\OneDrive\Documents\DotNet\Ticketing\bin\Debug\net5.0\Ticketing.dll
+C:\Users\Andy\OneDrive\Documents\DotNet\Ticketing\bin\Debug\net5.0\ref\Ticketing.dll
+C:\Users\Andy\OneDrive\Documents\DotNet\Ticketing\bin\Debug\net5.0\Ticketing.pdb
+C:\Users\Andy\OneDrive\Documents\DotNet\Ticketing\obj\Debug\net5.0\Ticketing.csproj.AssemblyReference.cache
+C:\Users\Andy\OneDrive\Documents\DotNet\Ticketing\obj\Debug\net5.0\Ticketing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andy\OneDrive\Documents\DotNet\Ticketing\obj\Debug\net5.0\Ticketing.AssemblyInfoInputs.cache
+C:\Users\Andy\OneDrive\Documents\DotNet\Ticketing\obj\Debug\net5.0\Ticketing.AssemblyInfo.cs
+C:\Users\Andy\OneDrive\Documents\DotNet\Ticketing\obj\Debug\net5.0\Ticketing.csproj.CoreCompileInputs.cache
+C:\Users\Andy\OneDrive\Documents\DotNet\Ticketing\obj\Debug\net5.0\Ticketing.dll
+C:\Users\Andy\OneDrive\Documents\DotNet\Ticketing\obj\Debug\net5.0\ref\Ticketing.dll
+C:\Users\Andy\OneDrive\Documents\DotNet\Ticketing\obj\Debug\net5.0\Ticketing.pdb
+C:\Users\Andy\OneDrive\Documents\DotNet\Ticketing\obj\Debug\net5.0\Ticketing.genruntimeconfig.cache
