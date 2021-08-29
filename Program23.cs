@@ -4,7 +4,7 @@ using System.IO;
 
 namespace Ticketing
 {
-    class Program2
+    class Program23
     {
 
 
@@ -151,7 +151,7 @@ namespace Ticketing
 
 
 
-        static void Main2(string[] args)
+        static void Main23(string[] args)
         {
             Console.WriteLine("Hello World!");
             //Program p = new Program();
