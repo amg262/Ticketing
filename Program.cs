@@ -23,7 +23,7 @@ namespace Ticketing
             Console.WriteLine("Enter any other key to exit.");
 
             choice = Console.ReadLine();
-            
+            string stream = "";
             
             
             if (!File.Exists(file))
@@ -39,74 +39,99 @@ namespace Ticketing
 
                 while (!sr.EndOfStream)
                 {
-                    
+                    var line = sr.ReadLine();
+                    if (line != "")
+                    {
+                        stream += line;
+                        //stream += "\n";
+                    }
                 }
+
+                sr.Close();
             }
-         
-            string record_str = "";
-            string rec_str = "";
-            string[] records = new string[7];
-            
-            Console.Write("Ticket ID");
-            string id = Console.ReadLine();
-            records[0] = id;
 
-            Console.Write("Summary");
-            string summary = Console.ReadLine();
-            records[1] = summary;
-
-            Console.Write("Status");
-            string status = Console.ReadLine();
-            records[2] = status;
-            
-            Console.Write("Priority");
-            string priority = Console.ReadLine();
-            records[3] = priority;
-
-            Console.Write("Submitter");
-            string submitter = Console.ReadLine();
-            records[4] = submitter;
-            
-            Console.Write("Assigned");
-            string assigned = Console.ReadLine();
-            records[5] = assigned;
-            
-            Console.Write("Watching");
-            string watching = Console.ReadLine();
-            records[6] = watching; 
-
-            if (!File.Exists(file))
+            if (choice == "2")
             {
-                StreamReader sr = new StreamReader(file);
+                string record_str = "";
+                string rec_str = "";
+                string[] records = new string[7];
 
-                while (!sr.EndOfStream)
+                Console.Write("Ticket ID");
+                string id = Console.ReadLine();
+                records[0] = id;
+
+                Console.Write("Summary");
+                string summary = Console.ReadLine();
+                records[1] = summary;
+
+                Console.Write("Status");
+                string status = Console.ReadLine();
+                records[2] = status;
+
+                Console.Write("Priority");
+                string priority = Console.ReadLine();
+                records[3] = priority;
+
+                Console.Write("Submitter");
+                string submitter = Console.ReadLine();
+                records[4] = submitter;
+
+                Console.Write("Assigned");
+                string assigned = Console.ReadLine();
+                records[5] = assigned;
+
+                Console.Write("Watching");
+                string watching = Console.ReadLine();
+                records[6] = watching;
+
+                if (!File.Exists(file))
                 {
-                    string line = sr.ReadLine();
-                    Console.WriteLine(line);
-                }
+                    StreamReader sr = new StreamReader(file);
 
+                    while (!sr.EndOfStream)
+                    {
+                        string line = sr.ReadLine();
+                        Console.WriteLine(line);
+                    }
+
+                }
+                else
+                {
+                    StreamWriter sw = new StreamWriter(file);
+                    sw.WriteLine(stream);
+                    foreach (var index in records)
+                    {
+                        record_str += index;
+                        record_str += ",";
+                    }
+
+                    if (record_str.Length > 1)
+                    {
+                        rec_str = record_str.Substring(0, record_str.Length - 1) + "\n";
+                    }
+
+                    sw.WriteLine(rec_str);
+                    //sw.WriteLine(two);
+
+                    sw.Close();
+                }
             }
             else
             {
-                StreamWriter sw = new StreamWriter(file);
-                sw.WriteLine();
-                foreach (var index in records)
+                if (!File.Exists(file))
                 {
-                    record_str += index;
-                    record_str += ",";
-                }
+                    StreamReader sr = new StreamReader(file);
 
-                if (record_str.Length > 1)
-                {
-                    rec_str = record_str.Substring(0, record_str.Length - 1);
-                }
-                sw.WriteLine(rec_str);
-                //sw.WriteLine(two);
+                    while (!sr.EndOfStream)
+                    {
+                        string line = sr.ReadLine();
+                        Console.WriteLine(line);
+                    }
 
-                sw.Close();
+                }
             }
 
-          
+
 
             return;
             do
