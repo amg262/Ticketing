@@ -18,6 +18,31 @@ namespace Ticketing
             string[] dataOne = one.Split(",");
             string[] dataTwo = two.Split(",");
 
+            Console.WriteLine("1) Read data from file.");
+            Console.WriteLine("2) Create file from data.");
+            Console.WriteLine("Enter any other key to exit.");
+
+            choice = Console.ReadLine();
+            
+            
+            
+            if (!File.Exists(file))
+            {
+                StreamWriter sw = new StreamWriter(file);
+                sw.WriteLine(one);
+                sw.WriteLine(two);
+                sw.Close();
+            }
+            else
+            {
+                StreamReader sr = new StreamReader(file);
+
+                while (!sr.EndOfStream)
+                {
+                    
+                }
+            }
+         
             string record_str = "";
             string rec_str = "";
             string[] records = new string[7];
@@ -64,7 +89,7 @@ namespace Ticketing
             else
             {
                 StreamWriter sw = new StreamWriter(file);
-                
+                sw.WriteLine();
                 foreach (var index in records)
                 {
                     record_str += index;
