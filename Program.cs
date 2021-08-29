@@ -26,29 +26,29 @@ namespace Ticketing
             string stream = "";
             
             
-            if (!File.Exists(file))
-            {
-                StreamWriter sw = new StreamWriter(file);
-                sw.WriteLine(one);
-                sw.WriteLine(two);
-                sw.Close();
-            }
-            else
-            {
-                StreamReader sr = new StreamReader(file);
-
-                while (!sr.EndOfStream)
-                {
-                    var line = sr.ReadLine();
-                    if (line != "")
-                    {
-                        stream += line;
-                        //stream += "\n";
-                    }
-                }
-
-                sr.Close();
-            }
+            // if (!File.Exists(file))
+            // {
+            //     StreamWriter sw = new StreamWriter(file);
+            //     sw.WriteLine(one);
+            //     sw.WriteLine(two);
+            //     sw.Close();
+            // }
+            // else
+            // {
+            //     StreamReader sr = new StreamReader(file);
+            //
+            //     while (!sr.EndOfStream)
+            //     {
+            //         var line = sr.ReadLine();
+            //         if (line != "")
+            //         {
+            //             stream += line;
+            //             //stream += "\n";
+            //         }
+            //     }
+            //
+            //     sr.Close();
+            // }
 
             if (choice == "2")
             {
@@ -86,19 +86,10 @@ namespace Ticketing
 
                 if (!File.Exists(file))
                 {
-                    StreamReader sr = new StreamReader(file);
-
-                    while (!sr.EndOfStream)
-                    {
-                        string line = sr.ReadLine();
-                        Console.WriteLine(line);
-                    }
-
-                }
-                else
-                {
                     StreamWriter sw = new StreamWriter(file);
-                    sw.WriteLine(stream);
+                    sw.WriteLine(one);
+                    sw.WriteLine(two);
+                    
                     foreach (var index in records)
                     {
                         record_str += index;
@@ -107,29 +98,66 @@ namespace Ticketing
 
                     if (record_str.Length > 1)
                     {
-                        rec_str = record_str.Substring(0, record_str.Length - 1) + "\n";
+                        rec_str = record_str.Substring(0, record_str.Length - 1);
                     }
-
                     sw.WriteLine(rec_str);
-                    //sw.WriteLine(two);
 
                     sw.Close();
                 }
-            }
-            else
-            {
-                if (!File.Exists(file))
+                else
                 {
+                    // StreamWriter sw = new StreamWriter(file);
+                    // sw.WriteLine(one);
+                    // sw.WriteLine(two);
+                    //
                     StreamReader sr = new StreamReader(file);
-
+                    Console.WriteLine("");
+                    Console.WriteLine(sr);
+                    
                     while (!sr.EndOfStream)
                     {
                         string line = sr.ReadLine();
-                        Console.WriteLine(line);
+                        stream += line;
+                        Console.Write(stream);
+                        //Console.WriteLine(line);
+                    }
+                    
+                    foreach (var index in records)
+                    {
+                        record_str += index;
+                        record_str += ",";
                     }
 
+                    Console.WriteLine(record_str);
+                    if (record_str.Length > 1)
+                    {
+                        rec_str = record_str.Substring(0, record_str.Length - 1);
+                    }
+                    
+                    Console.WriteLine(rec_str);
+
+                    
+                    //sw.WriteLine(rec_str);
+                   // sw.WriteLine();
+                    //sw.WriteLine(two);
+
+                    //sw.Close();
                 }
             }
+            // else
+            // {
+            //     if (!File.Exists(file))
+            //     {
+            //         StreamReader sr = new StreamReader(file);
+            //
+            //         while (!sr.EndOfStream)
+            //         {
+            //             string line = sr.ReadLine();
+            //             Console.WriteLine(line);
+            //         }
+            //
+            //     }
+            // }
 
 
 
