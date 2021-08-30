@@ -56,17 +56,13 @@ namespace Ticketing
             string choice;
             string one = "TicketID,Summary,Status,Priority,Submitter,Assigned,Watching";
             string two = "1,This is a bug ticket,Open,High,Drew Kjell,Jane Doe,Drew Kjell|John Smith|Bill Jones";
-            //string[] data1 = new string[] {"TicketID"}
-            string[] dataOne = one.Split(",");
-            string[] dataTwo = two.Split(",");
 
             /*
              * Prompt user to decide whether output data or input
              */
             Console.WriteLine("1) Output CSV records.");
             Console.WriteLine("2) Add CSV record.");
-            Console.WriteLine("");
-    
+
             choice = Console.ReadLine();
             string stream = "";
             
