@@ -25,30 +25,6 @@ namespace Ticketing
             choice = Console.ReadLine();
             string stream = "";
             
-            
-            // if (!File.Exists(file))
-            // {
-            //     StreamWriter sw = new StreamWriter(file);
-            //     sw.WriteLine(one);
-            //     sw.WriteLine(two);
-            //     sw.Close();
-            // }
-            // else
-            // {
-            //     StreamReader sr = new StreamReader(file);
-            //
-            //     while (!sr.EndOfStream)
-            //     {
-            //         var line = sr.ReadLine();
-            //         if (line != "")
-            //         {
-            //             stream += line;
-            //             //stream += "\n";
-            //         }
-            //     }
-            //
-            //     sr.Close();
-            // }
 
             if (choice == "2")
             {
@@ -135,20 +111,20 @@ namespace Ticketing
 
                 }
             }
-            // else
-            // {
-            //     if (!File.Exists(file))
-            //     {
-            //         StreamReader sr = new StreamReader(file);
-            //
-            //         while (!sr.EndOfStream)
-            //         {
-            //             string line = sr.ReadLine();
-            //             Console.WriteLine(line);
-            //         }
-            //
-            //     }
-            // }
+            else
+            {
+            
+                StreamReader sr = new StreamReader(file);
+        
+                while (!sr.EndOfStream)
+                {
+                    string line = sr.ReadLine();
+                    Console.WriteLine(line);
+                }
+                
+                sr.Close();
+      
+            }
 
 
 
