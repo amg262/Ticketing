@@ -1,9 +1,18 @@
 ﻿using System;
 using System.IO;
 
+/*
+ * Namespace designated for Ticketing project.
+ *
+ * GITHUB ACCOUNT:      https://github.com/amg262/
+ * GITHUB REPO:         https://github.com/amg262/Ticketing
+ * 
+ */
 namespace Ticketing
 {
     /*
+     *
+     * 
      * Program class: contains main method program runs. Had set csv file that is
      * read and written to based on user choice of 1. output CSV data file - or -
      * 2. input data to CSV file based on console prompts for each field.
@@ -25,7 +34,8 @@ namespace Ticketing
      * THE GOOD DOCUMENTATION DONE ADDS TO THE ADHEREANCE TO INDUSTRY STANDARD BEST PRACTICES AND MIMICS A REALWORLD SCENARIO
      * AND PROJECT TO BE CONSIDERED ACCEPTABLE TO HIGH STANDARDS.
      *
-     * 
+     * GITHUB ACCOUNT:      https://github.com/amg262/
+     * GITHUB REPO:         https://github.com/amg262/Ticketing
      *
      * I JUST WANTED TO EXPLAIN THIS IF YOU WERE TO DOWNLOAD, RUN MY PROGRAM YOU MAY NOTICE THIS AND THINK THAT I JUST MESSED UP.
      * BUT THIS IS THE *ONLY* WAY I COULD MAKE IT WORK CROSS PLATFORM/FRAMEWORK/MACHINE. PLEASE DONT DOCK ME, I WORKED REALLY HARD,
