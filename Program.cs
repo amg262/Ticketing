@@ -6,6 +6,8 @@ using System.IO;
  *
  * GITHUB ACCOUNT:      https://github.com/amg262/
  * GITHUB REPO:         https://github.com/amg262/Ticketing
+ *
+ * THERE IS SOME NOTES IN README.MD ON REPO 
  * 
  */
 namespace Ticketing
