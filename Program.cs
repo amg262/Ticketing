@@ -100,27 +100,25 @@ namespace Ticketing
                     {
                         rec_str = record_str.Substring(0, record_str.Length - 1);
                     }
-                    sw.WriteLine(rec_str);
+                    sw.Write(rec_str);
 
                     sw.Close();
                 }
                 else
                 {
-                    // StreamWriter sw = new StreamWriter(file);
-                    // sw.WriteLine(one);
-                    // sw.WriteLine(two);
-                    //
-                    StreamReader sr = new StreamReader(file);
-                    Console.WriteLine("");
-                    Console.WriteLine(sr);
                     
+                    StreamReader sr = new StreamReader(file);
+
                     while (!sr.EndOfStream)
                     {
                         string line = sr.ReadLine();
                         stream += line;
-                        Console.Write(stream);
-                        //Console.WriteLine(line);
+                        stream += "\n";
                     }
+                    sr.Close();
+           
+                    StreamWriter sw = new StreamWriter(file);
+                    sw.Write(stream);
                     
                     foreach (var index in records)
                     {
@@ -128,20 +126,13 @@ namespace Ticketing
                         record_str += ",";
                     }
 
-                    Console.WriteLine(record_str);
                     if (record_str.Length > 1)
                     {
                         rec_str = record_str.Substring(0, record_str.Length - 1);
                     }
-                    
-                    Console.WriteLine(rec_str);
+                    sw.Write(rec_str);
+                    sw.Close();
 
-                    
-                    //sw.WriteLine(rec_str);
-                   // sw.WriteLine();
-                    //sw.WriteLine(two);
-
-                    //sw.Close();
                 }
             }
             // else
