@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "58pfw1fY0e/Ooltv3zraLb6sPuBXJNWruaV78mIRU5x7nKYOphs/9VnZ0uHlu8cbyb7e7hJjNkJjed5rAOkGRQ==",
+  "dgSpecHash": "IZxczSeq/9E2BsfH54vWrUBAdowzKQHhXwK7wLRXDcYyCL6hbHqr8M4iN1GXrvncsoeED34Tvz7/wvLeL9CoDw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Andy\\OneDrive\\Documents\\DotNet\\Ticketing\\Ticketing.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Andy\\Code\\repo\\Ticketing\\Ticketing.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Andy\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
